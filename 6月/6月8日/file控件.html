@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    #wrap {
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #00cc33;
+        cursor: pointer;
+    }
+
+    #file-input{
+        width: 200px;
+        height: 200px;
+        background: #00cc33;
+    }
+</style>
+</head>
+<body>
+    <label for="file-input" id="wrap">上传文件</label>
+    <form><input type="file" style="position: absolute; clip:rect(0,0,0,0) " id="file-input"></form>
+
+</body>
+<script>
+    var files = document.getElementById('file-input');
+
+    files.addEventListener("change", handleFiles, false)
+
+    function handleFiles() {
+        var fileList = this.files;
+        console.log(fileList[0].name);
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<input type="button" value="新窗口打开" onclick="openWindow()" />
+<script>
+    function openWindow() {
+        var cty  = confirm("是否打开一个新窗口");
+        if(cty == true){
+            var url = prompt("打开一个新窗口", "http://www.imooc.com");
+            window.open(url, '_blank', 'width=400px,height=500px,menubar=no, toolbar=no');
+
+        }
+    }
+</script>
+</html>
