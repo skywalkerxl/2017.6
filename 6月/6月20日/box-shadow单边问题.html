@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        /*
+            和psd软件制作图片相比，box-shadow修改元素的阴影效果要方便的多，因为：
+            box-shadow可以修改六个参数，得到不同的效果。下面结合一些简单的案例来对box-shadow属性进行说明
+        */
+        .box-shadow{
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+        .top{ box-shadow: 0 -4px 5px -3px red; }
+        .left{ box-shadow: -4px 0 5px -3px green; }
+        .right{ box-shadow: 4px 0 5px -3px blue; }
+        .bottom{ box-shadow: 0 4px 5px -3px orange; }
+    </style>
 </head>
 <body>
-
+    <div class='box-shadow top'></div>
+    <div class='box-shadow right'></div>
+    <div class='box-shadow bottom'></div>
+    <div class='box-shadow left'></div>
 </body>
 </html>
