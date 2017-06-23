@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // m表分母的最大值，图中的m则是100
+    function calc(m ){
+        var sum = 0;
+        for( var i = 2; i <= m ;  i++ )
+        {
+            sum += (i + 1)/i;
+        }
+        return sum ;
+    }
+    console.log( calc(3) );
+</script>
+</html>
